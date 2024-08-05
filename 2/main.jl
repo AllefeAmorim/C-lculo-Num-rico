@@ -3,7 +3,7 @@
 #  i = 0
 #  exp = 0
 #  while termo > 0
-     termo = termo * (x/n)
+#     termo = termo * (x/n)
 #    exp += x^i/factorial(i)
 #    i = i + 1
 #  end
