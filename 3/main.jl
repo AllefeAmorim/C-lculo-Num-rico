@@ -18,7 +18,7 @@ error = 10^-4
 r = bisection(0,1,f,error)
 println(r)
 
-#Exercicio 3.22
+#Exercicio 3.2.2
 
 g(x) = 5*sin(x^2) - exp(x/10)
 error = 10^-5
@@ -34,3 +34,15 @@ println(z)
 y = bisection(2.5,2.6,g,error)
 z = round(y, digits=4)
 println(z)
+
+#Exercicio 3.2.8
+
+Ir = 10^-12
+Vt = ((1.38*10^-23)*(300))/(1.60*10^-19)
+R = 1000
+V = 3
+f(x) = R*(Ir*(exp(x/Vt) - 1)) + x - V
+error = 10^-5
+a = 0
+b = 1
+println(bisection(a, b, f, error))
